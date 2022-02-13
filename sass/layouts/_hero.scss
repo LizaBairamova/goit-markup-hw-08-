@@ -1,0 +1,84 @@
+.hero {
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--dark-background-color);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob-480-1x.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 118px;
+	padding-bottom: 198px;
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/hero-mob-480-2x.jpg");
+	}
+	@media screen and (min-width: 768px) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/hero-tab-768-1x.jpg");
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/hero-tab-768-2x.jpg");
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		padding-top: 200px;
+		padding-bottom: 280px;
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../images/hero-desk-1600-1x.jpg");
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url("../images/hero-desk-1600-2x.jpg");
+		}
+	}
+}
+.hero__title {
+	color: var(--light-color-for-another);
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 360px;
+	@media screen and (min-width: 1200px) {
+		color: var(--light-color-for-another);
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.36;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 696px;
+	}
+}
+.hero__btn {
+	color: var(--light-color-for-another);
+	background-color: var(--accent-color);
+	font-family: $PrimaryFont;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	border-radius: 4px;
+	border: none;
+	padding: 10px 32px;
+	cursor: pointer;
+	transition-property: background-color;
+	transition-duration: var(--transition-duration);
+	transition-timing-function: var(--transition-timing-function);
+	&:hover,
+	&:focus {
+		background-color: var(--btn-background-color);
+	}
+}

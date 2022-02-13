@@ -1,0 +1,11 @@
+body {
+	font-family: $PrimaryFont;
+	background-color: var(--light-color-for-another);
+}
+
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
